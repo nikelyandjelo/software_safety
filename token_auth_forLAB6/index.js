@@ -29,13 +29,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/api/redirect', (_, res) => { // Редірект з параметрами
     return res.redirect(301,
-        `https://dev-zu5fi3y8yfa18hqy.us.auth0.com/authorize
+        `https://dev-tyadv4mn38acpd24.us.auth0.com/authorize
         ?client_id=YNf99vxIkTuiN8gFH3a3G6dcfPIb4lTB
         &redirect_uri=http://localhost:3000/
         &response_type=code
         &response_mode=query
         &scope=offline_access+openid+profile
-        &audience=https://dev-zu5fi3y8yfa18hqy.us.auth0.com/api/v2/
+        &audience=https://dev-tyadv4mn38acpd24.us.auth0.com/api/v2/
         &prompt=login
     `);
 });
